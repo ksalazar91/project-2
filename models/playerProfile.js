@@ -17,6 +17,7 @@ module.exports = function(sequelize, DataTypes) {
         pswd: DataTypes.STRING
       
     });
+
     return Profile;
   };
   
