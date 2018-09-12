@@ -3,19 +3,19 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Profile.findAll({}).then(function(players) {
+    db.Stats.findAll({}).then(function(players) {
       res.render("index", {
         msg: "Welcome!",
-        profile: players
+        Stats: players
       });
     });
   });
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
-    db.Profile.findOne({ where: { id: req.params.id } }).then(function(players) {
+    db.Stats.findOne({ where: { id: req.params.id } }).then(function(players) {
       res.render("example", {
-        profile: players
+        Stats: players
       });
     });
   });
