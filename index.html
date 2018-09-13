@@ -16,7 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/styles.css" rel="stylesheet">
-
+   
   </head>
 
   <body>
@@ -75,8 +75,7 @@
         <div class="col-sm-4">
             <!-- <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal"> Start Game </a></p> -->
         
-        
-        
+      
             <!-- BEGIN # MODAL LOGIN -->
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
@@ -140,7 +139,7 @@
                     <!-- End | Lost Password Form -->
                     
                     <!-- Begin | Register Form -->
-                    <form id="register-form" style="display:none;">
+                    <form id="register-form"style="display:none;" id="signup" name="signup" method="post" action="/signup">
                         <div class="modal-body">
                             <div id="div-register-msg">
                                 <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
@@ -148,7 +147,28 @@
                             </div>
                             <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
                             <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="firstname" class="form-control" type="text" placeholder="First Name" required>
+                            <input id="lastname" class="form-control" type="text" placeholder="Last Name" required>
+                            <!-- <input id="species" class="form-control" type="radio" required> <label>Vampire</label> -->
+                          <br>
+                            <select class="form-control"name="species">
+                                <option value="" disabled selected>Select your Species</option>
+                                <option value="vampire">Vampire</option>
+                                <option value="Lycon">Lycon</option>
+                              </select>
                             <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Repeat Password" required>
+                            <!-- <form >
+                              <label for="email">Email Address</label>
+                              <input class="text" name="email" type="email" />
+                              <label for="firstname">Firstname</label>
+                              <input name="firstname" type="text" />
+                              <label for="lastname">Lastname</label>
+                              <input name="lastname" type="text" />
+                              <label for="password">Password</label>
+                              <input name="password" type="password" />
+                              <input class="btn" type="submit" value="Sign Up" />
+                       </form> -->
                         </div>
                         <div class="modal-footer">
                             <div>
@@ -214,7 +234,7 @@
         </div>
         <div class="col-sm-4 my-4">
           <div id="fcard" class="card">
-            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+            <img class="card-img-top" src="assets/images/kda.png" alt="">
             <div class="card-body">
               <h4 class="card-title">Championship</h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
@@ -243,15 +263,15 @@
       <h2 id="team" class="my-4">Our Team</h2>
     </div>
     <div class="col-lg-4 col-sm-6 text-center mb-4">
-        <img class="rounded-circle img-fluid d-block mx-auto profile" src="http://placehold.it/200x200" alt="">
+        <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://media.licdn.com/dms/image/C5103AQGNu4AR5YGjTQ/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=JETHHkoByP7IFj2I_WRdJxGKibRCMN2N8memmGx1N1Y" alt="">
         <h3>Karen Alfaro
           <br><small>Back-End Developer</small>
         </h3>
         <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
       </div>
     <div class="col-lg-4 col-sm-6 text-center mb-4">
-      <img class="rounded-circle img-fluid d-block mx-auto profile" src="http://placehold.it/200x200" alt="">
-      <h3>Myra Lopez
+      <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://media.licdn.com/dms/image/C4E03AQG6SPIvBSPG-Q/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=_vmTX9KIdx1B6KD-GBSSb_EGbjTUuAGJNHoeGNWJoAg" alt="">
+      <h3>Mayra Lopez
         <br><small>Game Designer</small>
       </h3>
       <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
@@ -286,9 +306,96 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+  
     <script src="assets/jquery/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script>
+    $(function() {
+    
+        var $formLogin = $('#login-form');
+        var $formLost = $('#lost-form');
+        var $formRegister = $('#register-form');
+        var $divForms = $('#div-forms');
+        var $modalAnimateTime = 300;
+        var $msgAnimateTime = 150;
+        var $msgShowTime = 2000;
+    
+        $("form").submit(function () {
+            switch(this.id) {
+                case "login-form":
+                    var $lg_username=$('#login_username').val();
+                    var $lg_password=$('#login_password').val();
+                    if ($lg_username == "ERROR") {
+                        msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+                    } else {
+                        msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+                    }
+                    return false;
+                    break;
+                case "lost-form":
+                    var $ls_email=$('#lost_email').val();
+                    if ($ls_email == "ERROR") {
+                        msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "error", "glyphicon-remove", "Send error");
+                    } else {
+                        msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "success", "glyphicon-ok", "Send OK");
+                    }
+                    return false;
+                    break;
+                case "register-form":
+                    var $rg_username=$('#register_username').val();
+                    var $rg_email=$('#register_email').val();
+                    var $rg_password=$('#register_password').val();
+                    if ($rg_username == "ERROR") {
+                        msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+                    } else {
+                        msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+                    }
+                    return false;
+                    break;
+                default:
+                    return false;
+            }
+            return false;
+        });
+        
+        $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+        $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+        $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
+        $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+        $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+        $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
+        
+        function modalAnimate ($oldForm, $newForm) {
+            var $oldH = $oldForm.height();
+            var $newH = $newForm.height();
+            $divForms.css("height",$oldH);
+            $oldForm.fadeToggle($modalAnimateTime, function(){
+                $divForms.animate({height: $newH}, $modalAnimateTime, function(){
+                    $newForm.fadeToggle($modalAnimateTime);
+                });
+            });
+        }
+        
+        function msgFade ($msgId, $msgText) {
+            $msgId.fadeOut($msgAnimateTime, function() {
+                $(this).text($msgText).fadeIn($msgAnimateTime);
+            });
+        }
+        
+        function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+            var $msgOld = $divTag.text();
+            msgFade($textTag, $msgText);
+            $divTag.addClass($divClass);
+            $iconTag.removeClass("glyphicon-chevron-right");
+            $iconTag.addClass($iconClass + " " + $divClass);
+            setTimeout(function() {
+                msgFade($textTag, $msgOld);
+                $divTag.removeClass($divClass);
+                $iconTag.addClass("glyphicon-chevron-right");
+                $iconTag.removeClass($iconClass + " " + $divClass);
+          }, $msgShowTime);
+        }
+    });</script>
   </body>
 
 </html>
