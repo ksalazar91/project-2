@@ -1,9 +1,29 @@
 var authUser = require('../controllers/authUser.js');
+var db = require("../models/user");
 
 module.exports = function(app,passport){
+    app.get("/", function(req, res) {
+  
+        res.render("index");
+    });
+    app.get("/index.html", function(req, res) {
+  
+        res.render("index");
+    });
+    app.get("/news.html", function(req, res) {
+  
+        res.render("news");
+    });
+   
+    app.get("/api/players", function(req, res) {
+        db.User.findAll({}).then(function(user) {
+          res.json(user);
+        });
+      });
     
     app.get('/signup', authUser.signup);
     app.get('/signin', authUser.signin);
+   
     
     app.post('/signup', passport.authenticate('local-signup',  { 
         successRedirect: '/dashboard',
@@ -26,4 +46,10 @@ module.exports = function(app,passport){
 
         res.redirect('/signin');
     }
+
+    // Render 404 page for any unmatched routes
+    app.get("*", function(req, res) {
+        res.render("404");
+      });
 }
+

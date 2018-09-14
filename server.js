@@ -1,6 +1,8 @@
 require("dotenv").config();
 var express = require('express');
 var exphbs = require("express-handlebars");
+var bodyParser = require('body-parser'); //extracts the body part and format it to JSON form
+
 var db = require("./models");
 
 var app = express();
@@ -8,8 +10,6 @@ var PORT = process.env.PORT || 3000;
 
 var passport   = require('passport'); //handle authentication 
 var session    = require('express-session'); //handle authentication
-var bodyParser = require('body-parser'); //extracts the body part and format it to JSON form
-
 
 //Middleware
 //--------------------------------------------------------------------------------------------
@@ -17,6 +17,7 @@ var bodyParser = require('body-parser'); //extracts the body part and format it 
 //For bodyParser
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static("public"));
 
 // Handlebars
 app.engine(
