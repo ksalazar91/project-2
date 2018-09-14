@@ -1,0 +1,380 @@
+ <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Night Goblet Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signin" >Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup" >Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header with Background Image -->
+    <header class="business-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-3 text-center text-white mt-4">Start Your Journey</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="mt-4">Release Notes:</h2>
+          <p>09/11/18 - consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+          </p>
+        </div>
+        <div class="col-sm-4">
+            <!-- <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal"> Start Game </a></p> -->
+        
+  
+            <!-- BEGIN # MODAL LOGIN -->
+    {{!-- <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" align="center">
+                    <img class="img-circle logo" id="img_logo" src="assets/images/lvv.jpg">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+                
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+                
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+                        <div class="modal-body">
+                            <div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+                            <input id="login_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+                            <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End # Login Form -->
+                    
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+                        <div class="modal-body">
+                            <div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+                            <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+                    
+                    <!-- Begin | Register Form -->
+                    <form id="register-form"style="display:none;" id="signup" name="signup" method="post" action="/signup">
+                        <div class="modal-body">
+                            <div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+                            <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="firstname" class="form-control" type="text" placeholder="First Name" required>
+                            <input id="lastname" class="form-control" type="text" placeholder="Last Name" required>
+                            <!-- <input id="species" class="form-control" type="radio" required> <label>Vampire</label> -->
+                          <br>
+                            <select class="form-control"name="species">
+                                <option value="" disabled selected>Select your Species</option>
+                                <option value="vampire">Vampire</option>
+                                <option value="Lycon">Lycon</option>
+                              </select>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Repeat Password" required>
+                            <!-- <form >
+                              <label for="email">Email Address</label>
+                              <input class="text" name="email" type="email" />
+                              <label for="firstname">Firstname</label>
+                              <input name="firstname" type="text" />
+                              <label for="lastname">Lastname</label>
+                              <input name="lastname" type="text" />
+                              <label for="password">Password</label>
+                              <input name="password" type="password" />
+                              <input class="btn" type="submit" value="Sign Up" />
+                       </form> -->
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End | Register Form -->
+                    
+                </div>
+                <!-- End # DIV Form -->
+                
+            </div>
+        </div>
+    </div> --}}
+
+
+    <div class="container">
+    <!-- END # MODAL LOGIN -->
+          <h2 class="mt-4">Connect With Us</h2>
+          <address>
+            <strong>HippoFish</strong>
+           <!-- <br> Address -->
+            <br>Denver, CO
+            <br>
+          </address>
+          <address>
+            <abbr title="Phone">P:</abbr>
+            (123) 456-7890
+            <br>
+            <abbr title="Email">E:</abbr>
+            <a href="mailto:#">name@example.com</a>
+          </address>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-sm-4 my-4">
+          <div id="fcard" class="card">
+            <img class="card-img-top" src="assets/images/rules.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Game Rules</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div id="fcard" class="card">
+            <img class="card-img-top" id="vamp" src="assets/images/vamp.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Races</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div id="fcard" class="card">
+            <img class="card-img-top" src="assets/images/kda.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Championship</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+    
+ <!-- Introduction Row -->
+ <h1 id="about" class="my-4"><h1>
+    Meet Team HippoFish 2.0
+  </h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+
+  <!-- Team Members Row -->
+  <div id="tmr" class="row">
+    <div class="col-sm-12">
+      <h2 id="team" class="my-4">Our Team</h2>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://media.licdn.com/dms/image/C5103AQGNu4AR5YGjTQ/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=JETHHkoByP7IFj2I_WRdJxGKibRCMN2N8memmGx1N1Y" alt="">
+        <h3>Karen Alfaro
+          <br><small>Back-End Developer</small>
+        </h3>
+        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+      </div>
+    <div class="col-lg-4 col-sm-6 text-center mb-4">
+      <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://media.licdn.com/dms/image/C4E03AQG6SPIvBSPG-Q/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=_vmTX9KIdx1B6KD-GBSSb_EGbjTUuAGJNHoeGNWJoAg" alt="">
+      <h3>Mayra Lopez
+        <br><small>Game Designer</small>
+      </h3>
+      <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+    </div>
+
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://scontent.fapa1-1.fna.fbcdn.net/v/t1.0-9/29432860_10155661915384888_1461183312062621799_n.jpg?_nc_cat=0&oh=eb148c258d4058610f90db3f46710b9b&oe=5C23756C" alt="">
+      <h3>Julie Halls
+        <br><small>Project Manager</small>
+      </h3>
+      <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+    </div>
+    <div class="col-lg-4 col-sm-6 text-center mb-4">
+      <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://scontent.fapa1-1.fna.fbcdn.net/v/t1.0-9/430456_10151053498626493_901218739_n.jpg?_nc_cat=0&oh=a0f564e6c5708b687f23759b71c4e282&oe=5C22C613" alt="">
+      <h3> Cesar McFarlin
+        <br><small>Front-End Developer</small>
+      </h3>
+      <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+    </div>
+
+</div>
+<!-- /.container -->
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Night Goblet Online 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+  
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(function() {
+    
+        var $formLogin = $('#login-form');
+        var $formLost = $('#lost-form');
+        var $formRegister = $('#register-form');
+        var $divForms = $('#div-forms');
+        var $modalAnimateTime = 300;
+        var $msgAnimateTime = 150;
+        var $msgShowTime = 2000;
+    
+        $("form").submit(function () {
+            switch(this.id) {
+                case "login-form":
+                    var $lg_username=$('#login_username').val();
+                    var $lg_password=$('#login_password').val();
+                    if ($lg_username == "ERROR") {
+                        msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+                    } else {
+                        msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+                    }
+                    return false;
+                    break;
+                case "lost-form":
+                    var $ls_email=$('#lost_email').val();
+                    if ($ls_email == "ERROR") {
+                        msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "error", "glyphicon-remove", "Send error");
+                    } else {
+                        msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "success", "glyphicon-ok", "Send OK");
+                    }
+                    return false;
+                    break;
+                case "register-form":
+                    var $rg_username=$('#register_username').val();
+                    var $rg_email=$('#register_email').val();
+                    var $rg_password=$('#register_password').val();
+                    if ($rg_username == "ERROR") {
+                        msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+                    } else {
+                        msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+                    }
+                    return false;
+                    break;
+                default:
+                    return false;
+            }
+            return false;
+        });
+        
+        $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+        $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+        $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
+        $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+        $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+        $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
+        
+        function modalAnimate ($oldForm, $newForm) {
+            var $oldH = $oldForm.height();
+            var $newH = $newForm.height();
+            $divForms.css("height",$oldH);
+            $oldForm.fadeToggle($modalAnimateTime, function(){
+                $divForms.animate({height: $newH}, $modalAnimateTime, function(){
+                    $newForm.fadeToggle($modalAnimateTime);
+                });
+            });
+        }
+        
+        function msgFade ($msgId, $msgText) {
+            $msgId.fadeOut($msgAnimateTime, function() {
+                $(this).text($msgText).fadeIn($msgAnimateTime);
+            });
+        }
+        
+        function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+            var $msgOld = $divTag.text();
+            msgFade($textTag, $msgText);
+            $divTag.addClass($divClass);
+            $iconTag.removeClass("glyphicon-chevron-right");
+            $iconTag.addClass($iconClass + " " + $divClass);
+            setTimeout(function() {
+                msgFade($textTag, $msgOld);
+                $divTag.removeClass($divClass);
+                $iconTag.addClass("glyphicon-chevron-right");
+                $iconTag.removeClass($iconClass + " " + $divClass);
+          }, $msgShowTime);
+        }
+    });</script>

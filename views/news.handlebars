@@ -1,0 +1,302 @@
+
+
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Night Goblet Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News
+                  <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signin" >Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup" >Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+               {{!-- <!-- BEGIN # MODAL LOGIN -->
+               <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header" align="center">
+                              <img class="img-circle logo" id="img_logo" src="assets/images/castle.jpg">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                              </button>
+                          </div>
+                          
+                          <!-- Begin # DIV Form -->
+                          <div id="div-forms">
+                          
+                              <!-- Begin # Login Form -->
+                              <form id="login-form">
+                                  <div class="modal-body">
+                                      <div id="div-login-msg">
+                                          <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                          <span id="text-login-msg">Type your username and password.</span>
+                                      </div>
+                                      <input id="login_username" class="form-control" type="text" placeholder="Username" required>
+                                      <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                                      <div class="checkbox">
+                                          <label>
+                                              <input type="checkbox"> Remember me
+                                          </label>
+                                      </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <div>
+                                          <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                                      </div>
+                                      <div>
+                                          <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                          <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                                      </div>
+                                  </div>
+                              </form>
+                              <!-- End # Login Form -->
+                              
+                              <!-- Begin | Lost Password Form -->
+                              <form id="lost-form" style="display:none;">
+                                  <div class="modal-body">
+                                      <div id="div-lost-msg">
+                                          <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                          <span id="text-lost-msg">Type your e-mail.</span>
+                                      </div>
+                                      <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <div>
+                                          <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                                      </div>
+                                      <div>
+                                          <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                          <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                                      </div>
+                                  </div>
+                              </form>
+                              <!-- End | Lost Password Form -->
+                              
+                              <!-- Begin | Register Form -->
+                              <form id="register-form" style="display:none;">
+                                  <div class="modal-body">
+                                      <div id="div-register-msg">
+                                          <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                          <span id="text-register-msg">Register an account.</span>
+                                      </div>
+                                      <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                                      <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                                      <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <div>
+                                          <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                                      </div>
+                                      <div>
+                                          <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                          <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                      </div>
+                                  </div>
+                              </form>
+                              <!-- End | Register Form -->
+                              
+                          </div>
+                          <!-- End # DIV Form -->
+                          
+                      </div>
+                  </div>
+              </div> --}}
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="mt-4">NGO Launch</h1>
+
+          <!-- Author -->
+          <p class="lead">
+            by
+            <a href="#">camcfarlin</a>
+          </p>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p>Posted on September 8, 2018 at 1:00 PM</p>
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="assets/images/castle.jpg" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+
+          <blockquote class="blockquote">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </footer>
+          </blockquote>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+
+          <hr>
+
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-title">Leave a Comment:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Commenter Name</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+
+          <!-- Comment with nested comments -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Commenter Name</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+              <div class="media mt-4">
+                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                <div class="media-body">
+                  <h5 class="mt-0">Commenter Name</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+
+              <div class="media mt-4">
+                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                <div class="media-body">
+                  <h5 class="mt-0">Commenter Name</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Search Widget -->
+          <div class="card my-4">
+            <h5 class="card-title">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-title">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">HTML</a>
+                    </li>
+                    <li>
+                      <a href="#">Freebies</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">JavaScript</a>
+                    </li>
+                    <li>
+                      <a href="#">CSS</a>
+                    </li>
+                    <li>
+                      <a href="#">Tutorials</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-title">Side Widget</h5>
+            <div class="card-body">
+              You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Night Goblet Online 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
