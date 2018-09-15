@@ -209,3 +209,11 @@ body {
   color: black;
   border-radius: 0px;
 }
+
+#sign{
+    margin: 10% 40%;
+}
+
+#signup{
+    margin: 5% 40%;
+}
