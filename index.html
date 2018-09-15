@@ -12,10 +12,11 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="public/assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
   </head>
 
@@ -69,11 +70,11 @@
           <p>09/11/18 - consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
           <p>
-            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+            <a class="btn btn-outline-light btn-lg" href="#">Call to Action &raquo;</a>
           </p>
         </div>
         <div class="col-sm-4">
-            <!-- <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal"> Start Game </a></p> -->
+            <!-- <p class="text-center"><a href="#" class="btn btn-outline-light btn-lg" role="button" data-toggle="modal" data-target="#login-modal"> Start Game </a></p> -->
         
       
             <!-- BEGIN # MODAL LOGIN -->
@@ -81,7 +82,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" align="center">
-                    <img class="img-circle logo" id="img_logo" src="assets/images/lvv.jpg">
+                    <img class="img-circle logo" id="img_logo" src="public/assets/images/lvv.jpg">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                     </button>
@@ -107,7 +108,7 @@
                         </div>
                         <div class="modal-footer">
                             <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                                <button type="submit" class="btn btn-outline-dark btn-lg btn-block">Login</button>
                             </div>
                             <div>
                                 <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
@@ -128,7 +129,7 @@
                         </div>
                         <div class="modal-footer">
                             <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                                <button type="submit" class="btn btn-outline-light btn-lg btn-block">Send</button>
                             </div>
                             <div>
                                 <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
@@ -158,21 +159,10 @@
                               </select>
                             <input id="register_password" class="form-control" type="password" placeholder="Password" required>
                             <input id="register_password" class="form-control" type="password" placeholder="Repeat Password" required>
-                            <!-- <form >
-                              <label for="email">Email Address</label>
-                              <input class="text" name="email" type="email" />
-                              <label for="firstname">Firstname</label>
-                              <input name="firstname" type="text" />
-                              <label for="lastname">Lastname</label>
-                              <input name="lastname" type="text" />
-                              <label for="password">Password</label>
-                              <input name="password" type="password" />
-                              <input class="btn" type="submit" value="Sign Up" />
-                       </form> -->
                         </div>
                         <div class="modal-footer">
                             <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                                <button type="submit" class="btn btn-outline-dark btn-lg btn-block">Register</button>
                             </div>
                             <div>
                                 <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
@@ -211,37 +201,37 @@
       <div class="row">
         <div class="col-sm-4 my-4">
           <div id="fcard" class="card">
-            <img class="card-img-top" src="assets/images/rules.jpg" alt="">
+            <img class="card-img-top" src="public/assets/images/rules.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">Game Rules</h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a href="#" class="btn btn-outline-dark">Find Out More!</a>
             </div>
           </div>
         </div>
         <div class="col-sm-4 my-4">
           <div id="fcard" class="card">
-            <img class="card-img-top" id="vamp" src="assets/images/vamp.png" alt="">
+            <img class="card-img-top" id="vamp" src="public/assets/images/vamp.png" alt="">
             <div class="card-body">
               <h4 class="card-title">Races</h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a href="#" class="btn btn-outline-dark">Find Out More!</a>
             </div>
           </div>
         </div>
         <div class="col-sm-4 my-4">
           <div id="fcard" class="card">
-            <img class="card-img-top" src="assets/images/kda.png" alt="">
+            <img class="card-img-top" src="public/assets/images/kda.png" alt="">
             <div class="card-body">
               <h4 class="card-title">Championship</h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a href="#" class="btn btn-outline-dark">Find Out More!</a>
             </div>
           </div>
         </div>
@@ -252,50 +242,82 @@
     </div>
     <!-- /.container -->
     
- <!-- Introduction Row -->
- <h1 id="about" class="my-4"><h1>
-    Meet Team HippoFish 2.0
-  </h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
-
-  <!-- Team Members Row -->
-  <div id="tmr" class="row">
-    <div class="col-sm-12">
-      <h2 id="team" class="my-4">Our Team</h2>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-        <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://media.licdn.com/dms/image/C5103AQGNu4AR5YGjTQ/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=JETHHkoByP7IFj2I_WRdJxGKibRCMN2N8memmGx1N1Y" alt="">
-        <h3>Karen Alfaro
-          <br><small>Back-End Developer</small>
+  <!-- Introduction Row -->
+  <h1 id="about" class="my-4"><h1>
+      Meet Team HippoFish 2.0
+    </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+  
+    <!-- Team Members Row -->
+    <div id="tmr" class="row">
+      <div class="col-sm-12">
+        <h2 id="team" class="my-4">Our Team</h2>
+      </div>
+  
+      <!--  KAREN ALFARO   -->
+      <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://media.licdn.com/dms/image/C5103AQGNu4AR5YGjTQ/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=JETHHkoByP7IFj2I_WRdJxGKibRCMN2N8memmGx1N1Y" alt="">
+          <h3>Karen Alfaro
+            <br><small>Back-End Developer</small>
+          </h3>
+          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        <a href="#"><i class="fa fa-github"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a> 
+        <a href="#"><i class="fa fa-linkedin"></i></a> 
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <p><button>Contact</button></p>
+      </div>
+  
+       <!--  Mayra Lopez   -->
+      <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://media.licdn.com/dms/image/C4E03AQG6SPIvBSPG-Q/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=_vmTX9KIdx1B6KD-GBSSb_EGbjTUuAGJNHoeGNWJoAg" alt="">
+        <h3>Mayra Lopez
+          <br><small>Game Designer</small>
         </h3>
         <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+  
+        <a href="#"><i class="fa fa-github"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a> 
+        <a href="#"><i class="fa fa-linkedin"></i></a> 
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <p><button>Contact</button></p>
       </div>
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-      <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://media.licdn.com/dms/image/C4E03AQG6SPIvBSPG-Q/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=_vmTX9KIdx1B6KD-GBSSb_EGbjTUuAGJNHoeGNWJoAg" alt="">
-      <h3>Mayra Lopez
-        <br><small>Game Designer</small>
-      </h3>
-      <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-    </div>
-
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://scontent.fapa1-1.fna.fbcdn.net/v/t1.0-9/29432860_10155661915384888_1461183312062621799_n.jpg?_nc_cat=0&oh=eb148c258d4058610f90db3f46710b9b&oe=5C23756C" alt="">
-      <h3>Julie Halls
-        <br><small>Project Manager</small>
-      </h3>
-      <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-      <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://scontent.fapa1-1.fna.fbcdn.net/v/t1.0-9/430456_10151053498626493_901218739_n.jpg?_nc_cat=0&oh=a0f564e6c5708b687f23759b71c4e282&oe=5C22C613" alt="">
-      <h3> Cesar McFarlin
-        <br><small>Front-End Developer</small>
-      </h3>
-      <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-    </div>
-
-</div>
-<!-- /.container -->
-
+     <!--  Julie Halls   -->
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://scontent.fapa1-1.fna.fbcdn.net/v/t1.0-9/29432860_10155661915384888_1461183312062621799_n.jpg?_nc_cat=0&oh=eb148c258d4058610f90db3f46710b9b&oe=5C23756C" alt="">
+        <h3>Julie Halls
+          <br><small>Project Manager</small>
+        </h3>
+        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        <a href="#"><i class="fa fa-github"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a> 
+        <a href="#"><i class="fa fa-linkedin"></i></a> 
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <p><button>Contact</button></p>
+      </div>
+  
+      <!-- Center last buble to middle, but mobile will look wierd -->
+      <!-- <div class="col-lg-4 col-sm-6 text-center mb-4">
+      </div> --> 
+      
+      <!--  Cesar McFarlin   -->
+      <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <img class="rounded-circle img-fluid d-block mx-auto profile" src="https://scontent.fapa1-1.fna.fbcdn.net/v/t1.0-9/430456_10151053498626493_901218739_n.jpg?_nc_cat=0&oh=a0f564e6c5708b687f23759b71c4e282&oe=5C22C613" alt="">
+        <h3> Cesar McFarlin
+          <br><small>Front-End Developer</small>
+        </h3>
+        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+  
+        <a href="#"><i class="fa fa-github"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a> 
+        <a href="#"><i class="fa fa-linkedin"></i></a> 
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <p><button>Contact</button></p>
+      </div>
+  
+  </div>
+  </div>
+  <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
@@ -307,8 +329,8 @@
 
     <!-- Bootstrap core JavaScript -->
   
-    <script src="assets/jquery/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/assets/jquery/jquery.min.js"></script>
+    <script src="public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
     $(function() {
     
