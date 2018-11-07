@@ -2,7 +2,9 @@
 RPG game 
 
 Toasty CandyKorn - (Night Goblet Online)
+
 Team: HippoFish 2.0
+
 Karen Salazar, Cesar McFarlin, Mayra Lopez, Julie Hall
 
 # View Demo
@@ -14,19 +16,28 @@ User selects races, each with own pros/cons, ability to build house/clans defens
 
 ![Initial](https://github.com/ksalazar91/project-2/blob/master/2.png)
 # Resources Used:
-mySql - inventory management, class management
+mySql - inventory management
+
+class management
+
 Package - Phaser.js
 
 # MVP  
 Base Building 
+
 Single one on one 
+
 Two race - Vampire & Lycan
+
 Resources collection timer 
 
 # Pages 
 info/ login 
-house/clan 
+
+house/clan
+
 Game Map
+s
 Stats / basic game
 
 ![registration](https://github.com/ksalazar91/project-2/blob/master/1.png)
