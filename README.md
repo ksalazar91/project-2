@@ -1,9 +1,10 @@
 # project-2
 RPG game 
+https://night-goblet-online.herokuapp.com/
 
 Toasty CandyKorn - (working title)
 Team: HippoFish 2.0
-Julie Hall, Mayra Lopez, Cesar McFarlin,, Karen Salazar
+Julie Hall, Mayra Lopez, Cesar McFarlin, Karen Salazar
 
 Scalable Real-time Strategy Game, 
 
@@ -29,8 +30,8 @@ Stats / basic game
 
 Rough Breakdown of Tasks
 Cesar - Front-end
-Karen - Back-end - game Theory
-Julie - Project Manager /Code Support
+Karen - Back-end - game Theory Project manager
+Julie - Code Support
 Mayra - Beta Tester/ Code Support
 
 
