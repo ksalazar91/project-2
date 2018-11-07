@@ -44,8 +44,11 @@ Stats / basic game
 
 # Rough Breakdown of Tasks
 Cesar - Front-end
+
 Karen - Back-end - Game Theory, Server, Routing, login, registration 
+
 Julie - Project Manager/Code Support
+
 Mayra - Beta Tester/ Code Support
 
 
