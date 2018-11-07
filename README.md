@@ -6,6 +6,8 @@ Team: HippoFish 2.0
 Karen Salazar, Cesar McFarlin, Mayra Lopez, Julie Hall
 
 Scalable Real-time Strategy Game, 
+# View Demo
+https://drive.google.com/file/d/13rT3qKl3lqdS5u8CUT7M764imxMblkbz/view
 
 # Project Description:
 User selects races, each with own pros/cons, ability to build house/clans defense.  User goals is to breach the stronghold, ransack, and attack.
@@ -36,6 +38,5 @@ Karen - Back-end - Game Theory, Server, Routing, login, registration
 Julie - Project Manager/Code Support
 Mayra - Beta Tester/ Code Support
 
-# View Demo
-https://drive.google.com/file/d/13rT3qKl3lqdS5u8CUT7M764imxMblkbz/view
+
 
