@@ -1,36 +1,41 @@
 # project-2
 RPG game 
 
-Toasty CandyKorn - (working title)
+Toasty CandyKorn - (Night Goblet Online)
 Team: HippoFish 2.0
-Julie Hall, Mayra Lopez, Cesar McFarlin,, Karen Salazar
+Karen Salazar, Cesar McFarlin, Mayra Lopez, Julie Hall
 
 Scalable Real-time Strategy Game, 
 
-Project Description:
-User selects races, each with own pros/cons, ability to build house/clans defense.  User goals is breach the stronghold, ransack, and
+# Project Description:
+User selects races, each with own pros/cons, ability to build house/clans defense.  User goals is to breach the stronghold, ransack, and attack.
 
 
-Resources Used:
+![Initial](https://github.com/ksalazar91/project-2/blob/master/1.png)
+# Resources Used:
 mySql - inventory management, class management
 Package - Phaser.js
 
-MVP - 
+# MVP  
 Base Building 
 Single one on one 
 Two race - Vampire & Lycan
 Resources collection timer 
 
-4 pages - 
+# Pages 
 info/ login 
 house/clan 
 Game Map
 Stats / basic game
 
-Rough Breakdown of Tasks
+![registration](https://github.com/ksalazar91/project-2/blob/master/2.png)
+
+# Rough Breakdown of Tasks
 Cesar - Front-end
-Karen - Back-end - game Theory
-Julie - Project Manager /Code Support
+Karen - Back-end - Game Theory, Server, Routing, login, registration 
+Julie - Project Manager/Code Support
 Mayra - Beta Tester/ Code Support
 
+# View Demo
+https://drive.google.com/file/d/13rT3qKl3lqdS5u8CUT7M764imxMblkbz/view
 
