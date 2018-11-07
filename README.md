@@ -5,6 +5,10 @@ Toasty CandyKorn - (Night Goblet Online)
 Team: HippoFish 2.0
 Karen Salazar, Cesar McFarlin, Mayra Lopez, Julie Hall
 
+<<<<<<< HEAD
+=======
+Scalable Real-time Strategy Game, 
+>>>>>>> 4ecbeeacd85a328ecf76956b37f940b68498404b
 # View Demo
 https://drive.google.com/file/d/13rT3qKl3lqdS5u8CUT7M764imxMblkbz/view
 
